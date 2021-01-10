@@ -10,13 +10,13 @@
 4. All of the extracted loci which are derived from the same query sequence are combined into one fasta file. For example, if the input query.fasta file has five sequences, named sequentially (i.e., '>sequence_1', '>sequence_2',..., '>sequence_5'), the output files will be named 'sequence_1', 'sequence_2', etc. Each output file will contain the sequence of interest that was found in each input genome file. If the query file was search against 6 genome assemblies, and each assembly had one copy of sequence_1 to sequence_5, then each output file would contain 6 sequences. 
 
 Required binaries:
-	 * blastn (2.9.0)
-	 * makeblastdb (2.9.0)
+	* blastn (2.9.0)
+	* makeblastdb (2.9.0)
 
 Non-standard Python libraries:
-	 * biopython (Bio) (1.74)
-	 * pandas (0.24.2)
-	 * pyfaidx (0.5.7)
+	* biopython (Bio) (1.74)
+	* pandas (0.24.2)
+	* pyfaidx (0.5.7)
 
 ## Example usage
 1. Use blastn to align DNA sequences in `my_path/to/query_sequences/my_queries.fasta` against all the genome assemblies in `my_path/to/assemblies/`:
